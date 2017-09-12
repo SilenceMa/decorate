@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<!-- setting全局变量的配置 -->
+
+		<!-- mybatis的配置文件
+			1.主要用来进行mapper文件、别名及相关问价的配置
+		 -->
+		<typeAliases>
+			<!-- 批量别名（常用） -->
+			<package name="com.mpf.po"/>
+		</typeAliases>
+		<!-- 加载映射文件
+			使用spring和mybatis的整合包进行加载，不需要配置mapper文件
+			mapper.xml文件和mapper.java 同名且在同一目录下
+		 -->
+		<!-- <mappers>
+			<mapper resource="sqlmap/User.xml"/>
+				批量加载
+			<package name="com.mpf.mapper"/> 
+		</mappers> -->
+</configuration>
